@@ -1,0 +1,558 @@
+@font-face{
+	font-family:"messapia";
+	src: url("font/messapia.otf") format("opentype");
+}
+
+
+html{
+	 background:#f7f7f7; 
+	 overflow:none;
+	 cursor:default;
+ 
+	
+}
+
+body{
+	margin:0;
+ 	overscroll-behavior: none; /* default */
+ 	overscroll-behavior-x: none;
+ 	overscroll-behavior-y: none;
+}
+
+.main{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.indextransition{
+    animation-duration: 3s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInRight;
+}
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px){ 
+.indextransition{
+    animation-duration: 2s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInRight;
+}
+}
+
+.top{
+	position:sticky;
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.header{
+	display:flex;
+	justify-content:center;
+	height:16vh;
+	border-bottom: 1px solid black;
+}   
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+.header{
+	display:flex;
+	justify-content:center;
+	height:25vh;
+	border-bottom: 1px solid black;
+}   
+}
+
+.wrapper{
+	/* underline */
+	border-bottom: 1px solid black;
+	
+	/*height:5vh;*/
+	
+}
+
+.info-text{
+	display:none;
+}
+
+.exhibition-text{
+	display:none;
+}
+
+
+.foot{
+    
+    bottom: 5%;
+
+    width: 100%;
+    text-align: center;
+	transition: 1s ease-in-out;	
+	cursor:pointer;
+
+	
+}
+
+.foot:hover{
+	-webkit-transform: translateX(1.5em);
+	transform: translateX(1.5em);
+}
+
+.logo{
+	transition: 1s ease-in-out;	
+}
+
+.logo:hover{
+	-webkit-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+.logo a:link,.logo a:visited {
+	color:black;
+	background-color:transparent;
+	text-decoration:none;
+	cursor:default;
+}
+.logo a:hover,.logo a:active {
+	color:black;
+	background-color:transparent;
+	text-decoration:none;
+	cursor:default;
+}
+
+
+/* TEXT STYLE */
+
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+h1{
+	font-family:"messapia";
+	color:black;
+	
+}	
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+h1{
+	font-family:"messapia";
+	color:black;
+	font-size:7vw;
+	margin-left:1vw;
+}	
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+h2{
+	font-family:georgia;
+	font-weight:normal;
+	font-size:24px;
+	margin-left:10vw;
+	height:4vh;
+	
+}
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+h2{
+	font-family:georgia;
+	font-weight:normal;
+	font-size:20px;
+	margin-left:1vw;
+	height:3.5vh;
+	
+}
+}
+
+/* link to h2 */
+
+a:link, a:visited {
+	color:black;
+	background-color:transparent;
+	text-decoration:none;
+	cursor:cell;
+}
+
+a:hover, a:active {
+	color:	#5c87ff;
+	background-color:transparent;
+	text-decoration:none;
+	cursor:cell;
+}
+
+/* link to h2 */
+
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+h3{
+	font-family:georgia;
+	font-weight:normal;
+	color:	#5c87ff;
+	
+}
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+h3{
+	font-family:georgia;
+	font-weight:normal;
+	font-size:20px;
+	line-height:30px;
+	color:	#5c87ff;
+	margin-bottom:1vw;
+	margin-top:1vw;
+	margin-left:2vw;
+}
+}
+
+
+.projects{
+	font-family:georgia;
+	font-weight:normal;
+	color:	#5c87ff;	
+	
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.container-1{
+	display:flex;
+	justify-content:space-between;
+	margin-left:10vw;
+	margin-right:10vw;
+	border-top: 1px solid #5c87ff;
+    
+	animation-duration: 1.7s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInUp;
+	
+}	
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+.container-1{
+	display:flex;
+	justify-content:space-between;
+	flex-direction:column;
+	margin-left:1vw;
+	margin-right:1vw;
+	border-top: 1px solid #5c87ff;
+	margin-bottom:1vw;
+	
+	animation-duration: 1.7s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInUp;
+}	
+}
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.about{
+	font-family:georgia;
+	font-weight:normal;
+	color:	#5c87ff;
+	margin-left:10vw;
+	margin-right:10vw;
+	
+	animation-duration: 1.7s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInUp;
+	
+}
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px)  { 
+.about{
+	font-family:georgia;
+	font-weight:normal;
+	color:	#5c87ff;
+	margin-right:1vw;
+	margin-left:2vw;
+	
+	animation-duration: 1.7s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInUp;
+
+	
+}
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px)  { 
+.info-text{
+	margin-left:2vw;
+}
+}
+
+
+h3 a:link,h3 a:visited {
+	color:#5c87ff;
+	background-color:transparent;
+	text-decoration:none;
+	cursor:cell;
+}
+
+h3 a:hover,h3 a:active {
+	color:	#5c87ff;
+	background-color:transparent;
+	text-decoration:underline;
+	cursor:cell;
+}
+
+
+
+.line{
+	border-bottom: 1px solid black;
+}
+
+h4{
+	font-family:georgia;
+	font-weight:normal;
+	
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+p{
+	font-family:georgia;
+	font-weight:normal(200);
+	font-size:22px;
+	line-height:30px;
+	
+}	
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+p{
+	font-family:georgia;
+	font-weight:normal(200);
+ 	font-size:18px;
+ 	line-height:25px;
+}	
+}
+
+#moving{
+	margin-top:4vh;
+}
+
+/*exhibition style*/
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.exhibitiontransition{
+    animation-duration: 3s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInUp;
+}
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px){ 
+.exhibitiontransition{
+    animation-duration: 2s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInUp;
+}
+}
+
+.first{
+	display:flex;
+	padding-top:50px;
+	width:100%;
+}
+
+.location{
+	width:50%;
+	padding-left:10%;
+	padding-right:1%;
+}
+.exhibition-name{
+	width:50%;
+	padding-right:10%;
+	padding-left:1%;
+}
+
+.second{
+	display:flex;
+	
+	padding-top:50px;
+	
+}
+
+#ref1, #ref2{
+	line-height:0;
+}
+
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.container-2{
+	display:flex;
+	justify-content:space-between;
+	margin-left:10vw;
+	margin-right:10vw;
+	border-top: 1px solid #5c87ff;
+    
+
+	
+}	
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+.container-2{
+	display:flex;
+	justify-content:space-between;
+	flex-direction:column;
+	margin-left:1vw;
+	margin-right:1vw;
+	border-top: 1px solid #5c87ff;
+	margin-bottom:1vw;
+	
+	
+}	
+}
+
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.images{
+	width:100%;
+	padding-left:1%;
+	padding-right:1%;
+	flex-direction:row;
+    background-color: ;
+    overflow: auto;
+    white-space: nowrap;
+    display: inline-block;
+    color: black;
+    position: center;
+}    
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+.images{
+	display:none;
+}    
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.imagesphone{
+	display:none;
+}
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+	.imagesphone{
+		width:100%;
+		padding-left:1%;
+		padding-right:1%;
+		flex-direction:row;
+	    background-color: ;
+	    overflow: auto;
+	    white-space: nowrap;
+	    display: inline-block;
+	    color: black;
+	    position: center;
+	}
+	}
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.text{
+	width:60vw;
+	margin-left:10vw;
+	margin-top:5vw;
+	margin-bottom:10vw;
+}	
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+.text{
+	margin-right:2vw;
+	margin-left:2vw;
+	margin-top:10vw;
+	margin-bottom:10vw;
+}	
+}
+
+.question{
+	color:#5c87ff;
+}
+
+.answear{
+	margin-left:3vw;
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.ingress{
+	color:#5c87ff;
+	margin-left:10vw;
+	margin-right:10vw;
+	margin-top:2vw;
+	
+}
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+.ingress{
+	color:#5c87ff;
+	margin-left:2vw;
+	margin-right:2vw;	
+}
+}
+
+
+/* Animation transition fade in right */
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+	
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Animation transition fade in up */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0.5;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
